@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -11,6 +11,204 @@
 </head>
 <body>
     <header>
+      <div class="container-header">
+        <div class="logo">
+          <img src="/images/logo.svg" alt="logo">
+        </div>
+        <div class="menu">
+          <li><a href="">Trang chủ</a></li>
+          <li><a href="">Dịch vụ</a></li>
+          <li><a href="">Phòng</a></li>
+          <li><a href="">Tin tức</a></li>
+          <li><a href="/User/ContactPage/index.html">Liên hệ</a></li>
+          <li><button>Đặt ngay</button></li>
+        </div>
+      </div>
+    </header>
+
+    <div class="banner">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/banner1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/banner2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/banner3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+      </div>
+
+    <div class="form-checkroom">
+      <div class="form-input">
+        <input type="date">
+        <input type="date">
+        <input type="text" placeholder="Nhập giá">
+        <select name="typeroom" id="">
+          <option value="" selected disabled>Chọn loại phòng</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+      </div>
+      <div class="button-check">
+        <button><i class="fa-solid fa-magnifying-glass"></i> Tìm</button>
+      </div>
+    </div>
+
+    <div class="intro">
+      <div class="container-intro">
+        <div class="intro-img">
+          <img src="/images/intro.png" alt="intro-img" >
+        </div>
+        <div class="intro-text">
+          <h3>Giới thiệu</h3>
+          <h1>Hibtel is The Best Hotels to Celebrate Life</h1>
+          <p>Với các phòng biệt thự và bungalow được trang bị đầy đủ tiện nghi, 
+            không gian bên trong được bài trí theo phong cách sang trọng pha 
+            trộn những nét truyền thống của người Việt và những nét hiện đại 
+            của phương Tây. Chúng tôi có đội ngũ nhân viên được đào tạo bài bản, 
+            chuyên nghiệp và tác phong chuyên nghiệp, phục vụ tận tình.
+            Luxe Hotel tự tin mang đến cho bạn sự thăng hoa về cảm xúc, những 
+            trải nghiệm tốt nhất, tuyệt vời nhất trong kỳ nghỉ dưỡng của bạn. 
+            Hãy đến với chúng tôi, chúng tôi đảm bảo rằng bạn sẽ không hối tiếc.
+          </p>
+          <button>Learn more</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="best-room">
+      <div class="container-best-room">
+        <div class="header-best-room">
+          <p>ROOMS & SUITE</p>
+          <h3>Phòng tốt nhất</h3>
+        </div>
+        <div class="best-room-item">
+          <div class="item">
+            <img src="/images/best1.jpg" alt="room-img">
+            <span>Luxury</span>
+          </div>
+          <div class="item">
+            <img src="/images/best2.jpg" alt="room-img">
+            <span>Luxury</span>
+          </div>
+          <div class="item">
+            <img src="/images/best3.jpg" alt="room-img">
+            <span>Nam</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="container-services">
+        <div class="servives-text">
+          <h4>SERVICES & AMENITIES</h4>
+          <h3>Dịch vụ và tiện nghi</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et sapiente 
+            ad deserunt. Repellendus consequuntur praesentium aspernatur odio quisquam 
+            molestiae fuga quibusdam fugit, dignissimos debitis ipsa molestias dolor 
+            ad harum impedit.
+          </p>
+        </div>
+        <div class="services-image">
+          <img src="/images/services.jpg" alt="images">
+        </div>
+      </div>
+      <div class="container-list-services">
+        <div class="services-item">
+          <img src="/images/icon-1.svg" alt="">
+          <h3>Resturant</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium 
+            minus minima iusto quos doloremque aliquid
+          </p>
+        </div>
+        <div class="services-item">
+          <img src="/images/icon-2.svg" alt="">
+          <h3>Resturant</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium 
+            minus minima iusto quos doloremque aliquid
+          </p>
+        </div>
+        <div class="services-item">
+          <img src="/images/icon-3.svg" alt="">
+          <h3>Resturant</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium 
+            minus minima iusto quos doloremque aliquid
+          </p>
+        </div>
+        <div class="services-item">
+          <img src="/images/icon-4.svg" alt="">
+          <h3>Resturant</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium 
+            minus minima iusto quos doloremque aliquid
+          </p>
+        </div>
+        <div class="services-item">
+          <img src="/images/icon-5.svg" alt="">
+          <h3>Resturant</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium 
+            minus minima iusto quos doloremque aliquid
+          </p>
+        </div>
+        <div class="services-item">
+          <img src="/images/icon-6.svg" alt="">
+          <h3>Resturant</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium 
+            minus minima iusto quos doloremque aliquid
+          </p>
+        </div>
+        <div class="services-item">
+          <img src="/images/icon-7.svg" alt="">
+          <h3>Resturant</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium 
+            minus minima iusto quos doloremque aliquid
+          </p>
+        </div>
+        <div class="services-item">
+          <img src="/images/icon-8.svg" alt="">
+          <h3>Resturant</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium 
+            minus minima iusto quos doloremque aliquid
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="logo">
+        <img src="/images/logo.svg" alt="logo" width="100%">
+      </div>
+      <div class="contact-foot">
+        <div><i class="fa-solid fa-envelope"></i> : hotel@gmail.com</div>
+        <div><i class="fa-solid fa-phone"></i> : +12345689</div>
+        <div><i class="fa-solid fa-map"></i> : Da Nang, Viet Nam</div>
+      </div>
+    </footer>
+
+
+
+
+
+
+    <!-- <header>
         <div class="container-header">
             <div class="logo">
                 <img src="./Hotels.com_Logo_2023.svg.png" alt="logo" width="100%">
@@ -75,7 +273,7 @@
 
 
 
-        <!-- <div class="form">
+        <div class="form">
             <form action="" class="form-input">
                 <div class="input-col">
                     <label for="">Ngày nhận phòng</label>
@@ -98,7 +296,7 @@
                     <button><i class="fa-solid fa-magnifying-glass"></i> Seacrh</button>
                 </div>
             </form>
-        </div> -->
+        </div>
     </div>
 
     <div class="intro">
@@ -205,6 +403,6 @@
         <div><i class="fa-solid fa-phone"></i> : +12345689</div>
         <div><i class="fa-solid fa-map"></i> : Da Nang, Viet Nam</div>
       </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
