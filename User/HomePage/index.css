@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,200;1,300;1,400;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;;
-    
+    font-family: 'Playfair Display', serif;
 }
 
 body {
@@ -215,24 +214,32 @@ header {
 }
 
 .best-room-item .item {
-    position: relative;
+    transition: 0.4s;
 }
 
+.best-room-item .item:hover {
+    
+    transform: translateY(-10px);
+}
 .best-room-item .item img {
     border-radius: 10px;
     z-index: 5;
 }
 
-.best-room-item .item span {
-    position: absolute;
-    z-index: 6;
-    bottom: 20px;
-    right: 35%;
-    font-size: 30px;
-    font-weight: bold;
-    color: #FFFFFF;
+.best-room-item .item-info {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 20px #85777F;
 }
 
+.best-room-item .item-info p {
+    font-size: 30px;
+}
 .services {
     width: 100%;
 }
@@ -314,6 +321,8 @@ header {
     gap: 100px;
     color: #FFFFFF;
 }
+
+
 
 @keyframes slideRight {
     0% {

@@ -9,7 +9,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Quản lý phòng</title>
+    <title>Quản lý tài khoản</title>
     <link
       href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
       rel="stylesheet"
@@ -65,7 +65,7 @@
             class="dropdown-menu dropdown-menu-end"
             aria-labelledby="navbarDropdown"
           >
-            <li><a class="dropdown-item" href="#!">Đăng xuất</a></li>
+            <li><a class="dropdown-item" href="#!">Dăng xuát</a></li>
           </ul>
         </li>
       </ul>
@@ -127,13 +127,13 @@
       <div id="layoutSidenav_content">
         <main>
           <div class="container-fluid px-4">
-            <h1 class="mt-4">Quản lý phòng</h1>
+            <h1 class="mt-4">Quản lý tài khoản</h1>
             <ol class="breadcrumb mb-4">
               <li class="breadcrumb-item">
                 <a href="index.html">Dashboard</a>
               </li>
               <li class="breadcrumb-item active">
-                Quản lý thông tin khách hàng
+                Quản lý tài khoản
               </li>
             </ol>
             
@@ -143,15 +143,16 @@
               type="button"
               class="btn btn-primary"
               data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              data-bs-target="#modalAdd"
             >
-              Thêm phòng mới
+              Thêm tài khoản mới
             </button>
             </div>
-            <!-- Modal Add -->
+
+            <!-- Modal Add-->
             <div
               class="modal fade"
-              id="exampleModal"
+              id="modalAdd"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
@@ -160,7 +161,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">
-                      Nhập thông tin phòng mới
+                      Nhập thông tin
                     </h5>
                     <button
                       type="button"
@@ -172,29 +173,40 @@
                   <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Số phòng:</label>
-                          <input type="text" class="form-control" id="exampleInputroomid" aria-describedby="roomId">
-                        </div>
+                            <label for="exampleInputEmail1" class="form-label">Họ và tên:</label>
+                            <input type="text" class="form-control" id="exampleInputfullname" aria-describedby="fullname">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Tên đăng nhập:</label>
+                            <input type="text" class="form-control" id="exampleInputUsername" aria-describedby="username">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Mật khẩu:</label>
+                            <input type="text" class="form-control" id="exampleInputPassword" aria-describedby="password">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Số điện thoại:</label>
+                            <input type="text" class="form-control" id="exampleInputPhoneNumber" aria-describedby="phoneNumber">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email:</label>
+                            <input type="text" class="form-control" id="exampleInputEmail" aria-describedby="email">
+                          </div>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Giá:</label>
-                          <input type="text" class="form-control" id="exampleInputPrice" aria-describedby="price">
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Số tầng:</label>
-                          <input type="text" class="form-control" id="exampleInputFloor" aria-describedby="floor">
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Số lượng người:</label>
-                          <input type="text" class="form-control" id="exampleInputCapacity" aria-describedby="capacity">
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Số giường:</label>
-                          <input type="text" class="form-control" id="exampleInputQuantityBed" aria-describedby="quantityBed ">
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputDescription" class="form-label">Description :</label>
-                          <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
-                        </div>
+                          <label for="exampleInputEmail1" class="form-label">Quyền:</label><br>             
+                          <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Quản lý</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Nhân viên</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Khách hàng</label>
+                          </div>
+                        </div> 
                       </form>
                   </div>
                   <div class="modal-footer">
@@ -237,29 +249,40 @@
                   <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Số phòng:</label>
-                          <input type="text" class="form-control" id="exampleInputroomid" aria-describedby="roomId">
+                          <label for="exampleInputEmail1" class="form-label">Họ và tên:</label>
+                          <input type="text" class="form-control" id="exampleInputfullname" aria-describedby="fullname">
                         </div>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Giá:</label>
-                          <input type="text" class="form-control" id="exampleInputPrice" aria-describedby="price">
+                          <label for="exampleInputEmail1" class="form-label">Tên đăng nhập:</label>
+                          <input type="text" class="form-control" id="exampleInputUsername" aria-describedby="username">
                         </div>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Số tầng:</label>
-                          <input type="text" class="form-control" id="exampleInputFloor" aria-describedby="floor">
+                          <label for="exampleInputEmail1" class="form-label">Mật khẩu:</label>
+                          <input type="text" class="form-control" id="exampleInputPassword" aria-describedby="password">
                         </div>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Số lượng người:</label>
-                          <input type="text" class="form-control" id="exampleInputCapacity" aria-describedby="capacity">
+                          <label for="exampleInputEmail1" class="form-label">Số điện thoại:</label>
+                          <input type="text" class="form-control" id="exampleInputPhoneNumber" aria-describedby="phoneNumber">
                         </div>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Số giường:</label>
-                          <input type="text" class="form-control" id="exampleInputQuantityBed" aria-describedby="quantityBed ">
+                          <label for="exampleInputEmail1" class="form-label">Email:</label>
+                          <input type="text" class="form-control" id="exampleInputEmail" aria-describedby="email">
                         </div>
                         <div class="mb-3">
-                          <label for="exampleInputDescription" class="form-label">Description :</label>
-                          <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
-                        </div>
+                          <label for="exampleInputEmail1" class="form-label">Quyền:</label><br>             
+                          <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Quản lý</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Nhân viên</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Khách hàng</label>
+                          </div>
+                        </div> 
                       </form>
                   </div>
                   <div class="modal-footer">
@@ -278,6 +301,7 @@
               </div>
             </div>
 
+            <!-- Table -->
             <div class="card mb-4">
               <div class="card-header">
                 <i class="fas fa-table me-1"></i>
@@ -287,28 +311,56 @@
                 <table id="datatablesSimple">
                   <thead>
                     <tr>
-                      <th>Room ID</th>
-                      <th>Descrpition</th>
-                      <th>Status</th>
-                      <th>Price</th>
-                      <th>Floor</th>
-                      <th>Capacity</th>
-                      <th>Quantity bed</th>
+                      <th>Họ và tên</th>
+                      <th>Tên đăng nhập</th>
+                      <th>Mật khẩu</th>
+                      <th>Số điện thoại</th>
+                      <th>Email</th>
+                      <th>Vai trò</th>
                       <th>Sửa</th>
                       <th>Xóa</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>101</td>
-                      <td>Normal</td>
-                      <td>Hired</td>
-                      <td>10000</td>
-                      <td>1</td>
-                      <td>2</td>
-                      <td>1</td>
+                      <td>aaaaaaaa</td>
+                      <td>abc</td>
+                      <td>123456</td>
+                      <td>098752139</td>
+                      <td>abc@gmail.com</td>
+                      <td>Nhân viên</td>
                       <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalEdit">Sửa</button></td>
                       <td><button type="button" class="btn btn-danger">Xóa</button></td>
+                    </tr>
+                    <tr>
+                        <td>aaaaaaaa</td>
+                        <td>abc</td>
+                        <td>123456</td>
+                        <td>098752139</td>
+                        <td>abc@gmail.com</td>
+                        <td>Quản lý</td>
+                        <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalEdit">Sửa</button></td>
+                        <td><button type="button" class="btn btn-danger">Xóa</button></td>  
+                    </tr>
+                    <tr>
+                        <td>aaaaaaaa</td>
+                        <td>abc</td>
+                        <td>123456</td>
+                        <td>098752139</td>
+                        <td>abc@gmail.com</td>
+                        <td>Khách hàng</td>
+                        <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalEdit">Sửa</button></td>
+                        <td><button type="button" class="btn btn-danger">Xóa</button></td>  
+                    </tr>
+                    <tr>
+                        <td>aaaaaaaa</td>
+                        <td>abc</td>
+                        <td>123456</td>
+                        <td>098752139</td>
+                        <td>abc@gmail.com</td>
+                        <td>Khách hàng</td>
+                        <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalEdit">Sửa</button></td>
+                        <td><button type="button" class="btn btn-danger">Xóa</button></td>
                     </tr>
                   </tbody>
                 </table>
